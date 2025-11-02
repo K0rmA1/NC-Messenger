@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'TitleFont';
+    src: url('fonts/Jalnan.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.btn {
+    color: #e62727;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 250px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_f {
+    background-color: #1121ea;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 128px;
+    font-family: ''
+    font-weight: bold;
+    margin-top: 128px;
+    background: linear-gradient(to right, #ffffff, #555555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
