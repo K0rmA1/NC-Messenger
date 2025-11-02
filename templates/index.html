@@ -5,11 +5,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-    <header class="header">
-        <div class="title">Добро пожаловать!</div>
-    </header>
-    <button class="btn btn_f">Войти</button>
-    <button class="btn"></button>
-    <button class="btn btn_f">Зарегистрироваться</button>
+    <section class="hero-section">
+        <header class="header">
+            <div class="opt_button-group">
+                <button class="btn_opt">О нас</button>
+                <button class="btn_opt">Поддержка</button>
+                <button class="btn_opt">Сообщить о проблеме</button>
+            </div>
+            <div class="title">Добро пожаловать!</div>
+        </header>
+        <div class="center-block">
+            <button class="btn_ent">Войти</button>
+            <button class="btn_inf"></button>
+            <button class="btn_ent">Зарегистрироваться</button>
+        </div>
+    </section>
 </body>
 </html>

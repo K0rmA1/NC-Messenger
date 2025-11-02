@@ -11,20 +11,49 @@
     font-display: swap;
 }
 
-.btn {
-    color: #e62727;
-    font-size: 50px;
-    margin-left: 100px;
-    margin-top: 250px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+@keyframes gradient-f {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.btn_f {
-    background-color: #1121ea;
-    color: white;
+.opt_button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+.center-block {
+    position: fixed;
+    background: none;
+    border: none;
+    left: 50%;
+    margin-top: 150px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.btn_ent {
+
+}
+
+.btn_inf {
+
+}
+
+.btn_opt {
+    background: none;
+    border: none;
+    font-family: "TitleFont", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #392661;
+    margin-top: 0px;
+}
+
+.btn_opt:hover {
+    color: #b7a1e3;
 }
 
 .header {
@@ -33,12 +62,27 @@
 }
 
 .title {
-    font-size: 128px;
-    font-family: ''
+    font-size: 156px;
+    font-family: "TitleFont", sans-serif;
     font-weight: bold;
-    margin-top: 128px;
-    background: linear-gradient(to right, #ffffff, #555555);
-    -webkit-background-clip: text;
+    margin-top: 170px;
+    background: linear-gradient(90deg, #ccbbdd, #5643bb, #aa99cc, #4532aa, #ddccee);
+    background-size: 140% 100%;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+    unselectable: on;
+}
+
+
+.hero-section {
+    background: linear-gradient(135deg, #7de8b8, #28d481, #64d3d9, #9bf291);
+    background-size: 400% 400%;
+    animation: gradient-f 12s ease infinite;
+    min-height: 100vh;
+    width: 100%;
 }
